@@ -339,6 +339,8 @@ describe('Note app', function() {
       cy.get('input:first').type('mluukkai')
       cy.get('input:last').type('salainen')
       cy.get('#login-button').click()
+  
+      cy.contains('Matti Luukkainen logged in')
     })
     // highlight-end
 
